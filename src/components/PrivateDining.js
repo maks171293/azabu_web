@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import DataStore from '../flux/stores/DataStore.js';
+import Submenu from './Submenu';
 
 class PrivateDining extends React.Component{
   constructor(props){
@@ -52,6 +53,7 @@ class PrivateDining extends React.Component{
     return (
       <div className="main__wrap main__wrap-private">
         <div className="main__content main__content-private">
+          <Submenu/>
             <Link to="/" className="close-btn"></Link>
             <div className="links_wrap private__links_wrap">
             <h2 className="title private__title">private dining</h2>

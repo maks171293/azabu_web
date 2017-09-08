@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import DataStore from '../flux/stores/DataStore.js';
+import Submenu from './Submenu';
 
 class Menu extends React.Component{
   componentDidMount(){
@@ -20,6 +21,7 @@ class Menu extends React.Component{
     return (
       <div className="main__wrap main__wrap-menu">
       <div className="main__content main__content-menu">
+        <Submenu/>
       <Link to="/" className="close-btn"></Link>
       <div className="menu__imgBox" style={{backgroundImage: `url(${page.acf.image_background})`}}></div>
       <Link className="home__btn" to="/"></Link>

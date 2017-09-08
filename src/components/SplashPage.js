@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import DataStore from '../flux/stores/DataStore.js';
+import Submenu from './Submenu';
 
 class SplashPage extends React.Component{
   constructor(props){
@@ -46,6 +47,7 @@ class SplashPage extends React.Component{
       <div className="main__wrap">
         <div className="main__content main__content-landing-page">
         <div className="main__logo_box main__logo_box-splash">
+          <Submenu/>
           <Link to="/" className="close-btn"></Link>
             <div className="big_logo_wrapper"></div>
             <div dangerouslySetInnerHTML={ {__html: page.acf.destination} }></div>

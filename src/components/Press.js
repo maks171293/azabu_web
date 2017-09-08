@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import DataStore from '../flux/stores/DataStore.js';
+import Submenu from './Submenu';
 
 class Press extends React.Component{
   componentDidMount(){
@@ -19,8 +20,8 @@ class Press extends React.Component{
       <div className="main__wrap main__wrap-press">
 
 <div className="main__content main__content-press">
-
-   <Link to="/" className="home__btn home__btn-beige" ></Link>
+  <Submenu/>
+  
 <Link to="/" className="close-btn"></Link>
 <div className="title__wrap">
   <h2 className="press__title">press</h2>

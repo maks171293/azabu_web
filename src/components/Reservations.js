@@ -3,6 +3,7 @@ import DataStore from '../flux/stores/DataStore.js';
 import {Link} from 'react-router-dom';
 import moment from 'moment';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
+import Submenu from './Submenu';
 // import TimePicker from 'rc-time-picker';
 import TimePicker from 'material-ui/TimePicker';
 import DatePicker from 'material-ui/DatePicker'
@@ -75,6 +76,7 @@ class Reservations extends React.Component{
     return (
     <div className="main__wrap main__wrap-reserve">
       <div className="main__content main__content-pres">
+        <Submenu/>
         <Link to="/" className="close-btn"></Link>
         <div role="form" className="wpcf7" id="wpcf7-f274-o1" dir="ltr" lang="en-US">
           <div className="screen-reader-response"></div>

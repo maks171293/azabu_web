@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import DataStore from '../flux/stores/DataStore.js';
+import Submenu from './Submenu';
 
 class About extends React.Component{
   componentDidMount(){
@@ -22,7 +23,7 @@ class About extends React.Component{
     return (
         <div className="main__wrap main__wrap-about">
         <div className="main__content main__content-about">
-            <Link className="home__btn home__btn-beige" to="/"></Link>
+            <Submenu/>
             <Link to="/" className="close-btn"></Link>
        <div className="video__wrap">
            <div className="video__box">

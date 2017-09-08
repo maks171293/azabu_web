@@ -1,6 +1,7 @@
 import React from 'react';
 import DataStore from '../flux/stores/DataStore.js';
 import {Link} from 'react-router-dom';
+import Submenu from './Submenu';
 import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 
 import * as mapStyles from '../googleMapsStyle.json';
@@ -36,7 +37,7 @@ class Contact extends React.Component{
     return (
       <div className="main__wrap main__wrap-contact">
     <div className="main__content main__content-contact">
-      <a className="home__btn home__btn-beige" href="#"></a>
+        <Submenu/>
        <Link to="/" className="close-btn"></Link>
        <div id="map">
          <SimpleMapExampleGoogleMap

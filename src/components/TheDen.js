@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import DataStore from '../flux/stores/DataStore.js';
+import Submenu from './Submenu';
 
 class TheDen extends React.Component{
   componentDidMount(){
@@ -29,6 +30,7 @@ class TheDen extends React.Component{
     return (
       <div className="main__wrap">
         <div className="main__content main__content-landing-page">
+          <Submenu/>
         <Link to="/" className="close-btn"></Link>
         <div className="main__logo_box">
             <div className="big_logo_wrapper"></div>

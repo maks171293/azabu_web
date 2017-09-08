@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import DataStore from '../flux/stores/DataStore.js';
 import moment from 'moment';
+import Submenu from './Submenu';
 
 let eventWrapStyle = {
     width: '84%',
@@ -115,7 +116,7 @@ class Events extends React.Component{
     return (
       <div className="main__wrap main__wrap-events">
        <div className="main__content main__content-events">
-        <Link className="home__btn home__btn-beige" to="/"></Link>
+        <Submenu/>
         <Link to="/" className="close-btn"></Link>
         <div className="events__content">
             <a onClick={(event)=>this.leftEventsArrowClick(event)} href="#" style={{zIndex: '5'}}  className="arrow arrow-left arrow-left-pos"></a>

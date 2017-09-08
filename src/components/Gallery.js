@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Submenu from './Submenu';
 import DataStore from '../flux/stores/DataStore.js';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
@@ -77,7 +78,7 @@ class Gallery extends React.Component{
     return (
       <div className="main__wrap main__wrap-gallery">
         <div className="main__content main__content-gallery">
-            <a className="home__btn home__btn-beige" href="#"></a>
+          <Submenu/>
             <Link to="/" className="close-btn"></Link>
             <div style={{position: 'relative', overflow: 'hidden', width: '75%', height: '100%'}} className="gallery__wrap">
             {
