@@ -223,7 +223,7 @@ div.wpcf7{
 #map{
   transition: all .6s ease!important;
 }
-
+/*
 
 
 .sub_menu {
@@ -310,8 +310,175 @@ div.wpcf7{
     #nav-icon3 {
         display: block;
     }
-}
+}*/
 
 .main__content-contact .home__btn{
   left: 20px;
+}
+
+
+
+
+
+
+
+
+
+.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-bottom: 8px;
+  padding-top: 2px;
+  margin-left: 40px;
+}
+.inputs--inline {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.inputs__field {
+  box-sizing: border-box;
+}
+.inputs__field--text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: block;
+  width: 200px;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  background-color: transparent;
+  padding-left: 2px;
+  line-height: 26px;
+  -ms-flex-preferred-size: 26px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  border-width: 0;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition-property: border, padding;
+  transition-property: border, padding;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+          transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.inputs__field--text:focus ~ .inputs__label, .inputs__field--text:valid ~ .inputs__label {
+  -webkit-transform: translate3d(0, 20px, 0) scale(0.75);
+          transform: translate3d(0, 20px, 0) scale(0.75);
+  color: #756c61;
+  outline: none!important;
+  box-shadow: none;
+}
+.inputs__field--text:invalid{
+  box-shadow: none;
+}
+.inputs__field--text:valid{
+  border-bottom-color: #dd4641;
+  border-bottom-width: 2px;
+  padding-bottom: 0px;
+}
+.inputs__field--text:focus {
+  outline: 0;
+  padding-bottom: 0px;
+  border-bottom-color: #dd4641;
+  border-bottom-width: 2px;
+  outline: none!important;
+  transition: all ease-in .2s;
+}
+.inputs__field--text:focus ~ .inputs__label {
+  color: #dd4641!important;
+}
+.inputs__label {
+  box-sizing: border-box;
+  position: relative;
+  top: -10px;
+  text-transform: uppercase;
+  font-family: 'BrownStd-Bold';
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  z-index: 1;
+  padding-left: 2px;
+  -webkit-transform: translate3d(0, 28px, 0) scale(1);
+          transform: translate3d(0, 28px, 0) scale(1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition-property: color, -webkit-transform;
+  transition-property: color, -webkit-transform;
+  transition-property: transform, color;
+  transition-property: transform, color, -webkit-transform;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+          transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  pointer-events: none;
+  color: #756c61;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 2px;
+}
+.inputs__submit{
+  position: absolute;
+  border-radius: 0px;
+  background-color: #000;
+  color: #dd4641;
+  outline: none;
+  border: none;
+  left: 200px;
+  top: 29px;
+  height: 22px;
+  text-transform: uppercase;
+  opacity:0;
+  transition: all .2s ease-out;
+  transform: translateY(5px);
+}
+.inputs__field--text:focus ~ .inputs__submit {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.inputs__field--text:valid ~ .inputs__submit {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+
+
+.modal_content{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 35%;
+  left: 50%;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  overflow: auto;
+  border-radius: 4px;
+  outline: medium none;
+  padding: 20px;
+  margin-left: -100px;
+  margin-top: -50px;
+  opacity: 0;
+  transition: all .6s ease;
+}
+.ReactModal__Content--after-open{
+  opacity: 1;
+  top: 45%;
+}
+.modal_overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5)
 }
